@@ -64,7 +64,7 @@ const NewsLetter = () => {
             direction="row"
             sx={{
               width: "100%",
-              height: "100px",
+              height: "auto",
               borderRadius: "5px",
               justifyContent: "center",
               alignItems: "center",
@@ -73,9 +73,9 @@ const NewsLetter = () => {
             <TextField
               id="outlined-basic"
               variant="outlined"
-              placeholder="Type here..."
+              placeholder="Enter your email"
               sx={{
-                width: "40%",
+                width: "50%",
                 backgroundColor: "white",
                 borderRadius: "5px",
                 height: "40px",

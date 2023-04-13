@@ -79,7 +79,7 @@ const FormEvent = () => {
                   margin: "0.3rem 0.1rem",
                 }}
               >
-                e-MAIL
+                Email
               </label>
               <TextField
                 id="outlined-basic"

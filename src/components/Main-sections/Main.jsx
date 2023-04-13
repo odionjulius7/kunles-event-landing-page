@@ -53,7 +53,7 @@ function Main() {
         sx={{
           background: "#FFB339",
           minWidth: "100%",
-          height: "576px",
+          // height: "576px",
         }}
       >
         <AboutEvent />

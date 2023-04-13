@@ -32,6 +32,7 @@ import BeachAccessIcon from "@mui/icons-material/BeachAccess";
 // Local import
 import ImgAvatar from "../img/BG.png";
 import ImgList from "./Main-sections/ImgList";
+import Drawer1 from "./Drawer";
 
 function ReUsableComps() {
   //
@@ -43,6 +44,31 @@ function ReUsableComps() {
   const theme = useTheme();
   return (
     <Stack sx={{ margin: "3rem" }}>
+      <Drawer1 />
+      <Button
+        sx={{
+          position: "relative",
+          padding: "10px 20px",
+          background: "#fff",
+          margin: "5px",
+          borderRadius: "5px",
+          "&::after": {
+            content: '""',
+            position: "absolute",
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+            zIndex: -1,
+            margin: "-5px",
+            borderRadius: "inherit",
+            backgroundImage: "linear-gradient(45deg, purple, orange)",
+          },
+        }}
+      >
+        edit
+      </Button>
+
       <Stack>
         <Box sx={{ width: "100%", maxWidth: 500 }}>
           <Typography variant="h1" gutterBottom>

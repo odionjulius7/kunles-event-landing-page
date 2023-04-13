@@ -15,7 +15,11 @@ import ImgAvatar2 from "../img/ladies.png";
 const AboutEvent = () => {
   return (
     <Container>
-      <Stack direction="row" spacing={2} sx={{ alignItems: "center" }}>
+      <Stack
+        direction="row"
+        spacing={2}
+        sx={{ alignItems: "center", margin: "2rem 0" }}
+      >
         <Stack
           direction="row"
           spacing={2}
@@ -53,6 +57,7 @@ const AboutEvent = () => {
               sx={{
                 fontWeight: 600,
                 fontSize: "24px",
+                // marginTop: "2rem",
               }}
             >
               About My Event

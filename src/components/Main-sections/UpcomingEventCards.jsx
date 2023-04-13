@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, CardActionArea, CardActions } from "@mui/material";
-
+import { Button, CardActions } from "@mui/material";
 import Chip from "@mui/material/Chip";
 import BgImg from "../../img/BG.png";
 import LineImg from "../../img/line.png";
@@ -56,42 +55,49 @@ function UpcomingEventCards() {
         </Stack>
         {/* First Card */}
         <Stack sx={{ margin: "1rem 0" }}>
-          <Card sx={{ maxWidth: "100%", padding: "7px" }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={BgImg}
-                alt="green iguana"
-                sx={{ height: "310px" }}
-              />
-              <CardContent sx={{ padding: "5px" }}>
-                <Typography
-                  gutterBottom
-                  variant="h6"
-                  component="div"
-                  sx={{ fontSize: "18px", fontWeight: 600 }}
-                >
-                  Front-End Web Development: 5 Features of a Great Website (Web
-                  Design)
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ fontSize: "14px", fontWeight: 400, lineHeight: "25px" }}
-                >
-                  A good website, which serves as your company’s front door, is
-                  the most crucial marketing component. If all you need is a
-                  straightforward, off-the-shelf website that looks professional
-                  enough to give your business a basic start, there are
-                  thousands of pre-made templates and themes that make creating
-                  a website [...]
-                </Typography>
-                {/*  */}
-                <CardUserImg />
-                {/*  */}
-              </CardContent>
-            </CardActionArea>
+          <Card
+            sx={{
+              maxWidth: "100%",
+              padding: "15px",
+              // marginBottom: "1rem",
+              boxShadow: "0px 10px 60px rgba(103, 34, 181, 0.08)",
+            }}
+          >
+            {/* <CardActionArea> */}
+            <CardMedia
+              component="img"
+              height="140"
+              image={BgImg}
+              alt="green iguana"
+              sx={{ height: "310px" }}
+            />
+            <CardContent sx={{ padding: "5px" }}>
+              <Typography
+                gutterBottom
+                variant="h6"
+                component="div"
+                sx={{ fontSize: "18px", fontWeight: 600 }}
+              >
+                Front-End Web Development: 5 Features of a Great Website (Web
+                Design)
+              </Typography>
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{ fontSize: "14px", fontWeight: 400, lineHeight: "25px" }}
+              >
+                A good website, which serves as your company’s front door, is
+                the most crucial marketing component. If all you need is a
+                straightforward, off-the-shelf website that looks professional
+                enough to give your business a basic start, there are thousands
+                of pre-made templates and themes that make creating a website
+                [...]
+              </Typography>
+              {/*  */}
+              <CardUserImg />
+              {/*  */}
+            </CardContent>
+            {/* </CardActionArea> */}
             <CardActions>
               <Button
                 variant="contained"
@@ -112,62 +118,95 @@ function UpcomingEventCards() {
                 Attending
               </Button>
               <Button
-                variant="outlined"
+                variant="text"
                 size="small"
                 color="primary"
                 sx={{
-                  height: "40px",
-                  boder: "1px solid #8000FF",
+                  border: "none",
                   color: "#EE0034",
-                  padding: "10px, 30px, 10px, 30px !important",
+                  width: "150px",
+                  height: "40px",
+                  padding: "2px",
                   fontSize: "18px",
-                  fontWeight: 500,
-                  textTransform: "capitalize",
+                  background: "red",
+                  borderRadius: "4px",
+                  backgroundImage:
+                    "linear-gradient(to bottom right, #EE0034, #8000FF)",
+                  overflow: "hidden",
+                  "&:hover": {
+                    backgroundImage:
+                      "linear-gradient(to bottom right, #EE0034, #8000FF)",
+                    color: "#fff",
+                    border: "none",
+                  },
                 }}
               >
-                Not Attending
+                <Typography
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    background: "white",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textTransform: "capitalize",
+                    "&:hover": {
+                      backgroundImage:
+                        "linear-gradient(to bottom right, #EE0034, #8000FF)",
+                      color: "#fff",
+                      border: "none",
+                    },
+                  }}
+                >
+                  Not Attending
+                </Typography>
               </Button>
             </CardActions>
           </Card>
         </Stack>
         {/* Second Card */}
         <Stack sx={{ margin: "1rem 0" }}>
-          <Card sx={{ maxWidth: "100%", padding: "7px" }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={BgImg}
-                alt="green iguana"
-                sx={{ height: "310px" }}
-              />
-              <CardContent sx={{ padding: "5px" }}>
-                <Typography
-                  gutterBottom
-                  variant="h6"
-                  component="div"
-                  sx={{ fontSize: "18px", fontWeight: 600 }}
-                >
-                  Front-End Web Development: 5 Features of a Great Website (Web
-                  Design)
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ fontSize: "14px", fontWeight: 400, lineHeight: "25px" }}
-                >
-                  A good website, which serves as your company’s front door, is
-                  the most crucial marketing component. If all you need is a
-                  straightforward, off-the-shelf website that looks professional
-                  enough to give your business a basic start, there are
-                  thousands of pre-made templates and themes that make creating
-                  a website [...]
-                </Typography>
-                {/*  */}
-                <CardUserImg />
-                {/*  */}
-              </CardContent>
-            </CardActionArea>
+          <Card
+            sx={{
+              maxWidth: "100%",
+              padding: "15px",
+              // border: "1px solid #ccc",
+              boxShadow: "0px 10px 60px rgba(103, 34, 181, 0.08)",
+            }}
+          >
+            {/* <CardActionArea> */}
+            <CardMedia
+              component="img"
+              height="140"
+              image={BgImg}
+              alt="green iguana"
+              sx={{ height: "310px", transition: "all 0.3s ease" }}
+            />
+            <CardContent sx={{ padding: "5px" }}>
+              <Typography
+                gutterBottom
+                variant="h6"
+                component="div"
+                sx={{ fontSize: "18px", fontWeight: 600 }}
+              >
+                Front-End Web Development: 5 Features of a Great Website (Web
+                Design)
+              </Typography>
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{ fontSize: "14px", fontWeight: 400, lineHeight: "25px" }}
+              >
+                A good website, which serves as your company’s front door, is
+                the most crucial marketing component. If all you need is a
+                straightforward, off-the-shelf website that looks professional
+                enough to give your business a basic start, there are thousands
+                of pre-made templates and themes that make creating a website
+                [...]
+              </Typography>
+              <CardUserImg />
+            </CardContent>
+            {/* </CardActionArea> */}
             <CardActions>
               <Button
                 variant="contained"
@@ -176,7 +215,7 @@ function UpcomingEventCards() {
                 sx={{
                   backgroundImage:
                     "linear-gradient(to bottom right, #EE0034, #8000FF)",
-                  padding: "10px, 30px, 10px, 30px",
+                  padding: "10px 30px",
                   height: "40px",
                   width: "120px",
                   fontSize: "18px",
@@ -191,16 +230,44 @@ function UpcomingEventCards() {
                 size="small"
                 color="primary"
                 sx={{
-                  height: "40px",
-                  boder: "1px solid #8000FF",
+                  border: "none",
                   color: "#EE0034",
-                  padding: "10px, 30px, 10px, 30px !important",
+                  width: "150px",
+                  height: "40px",
+                  padding: "2px",
                   fontSize: "18px",
-                  fontWeight: 500,
-                  textTransform: "capitalize",
+                  background: "red",
+                  borderRadius: "4px",
+                  backgroundImage:
+                    "linear-gradient(to bottom right, #EE0034, #8000FF)",
+                  overflow: "hidden",
+                  "&:hover": {
+                    backgroundImage:
+                      "linear-gradient(to bottom right, #EE0034, #8000FF)",
+                    color: "#fff",
+                    border: "none",
+                  },
                 }}
               >
-                Not Attending
+                <Typography
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    background: "white",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textTransform: "capitalize",
+                    "&:hover": {
+                      backgroundImage:
+                        "linear-gradient(to bottom right, #EE0034, #8000FF)",
+                      color: "#fff",
+                      border: "none",
+                    },
+                  }}
+                >
+                  Not Attending
+                </Typography>
               </Button>
             </CardActions>
           </Card>
@@ -233,16 +300,59 @@ function UpcomingEventCards() {
               textTransform: "capitalize",
             }}
           />
-          <DropDownBtn
-            children="Event Category"
+          <Button
             sx={{
+              background: "transparent",
               textTransform: "capitalize",
-              backgroundColor: "transparent ",
               color: "#EE0034",
-              borderRadius: "5px",
-              border: "1px solid #8000FF",
+              border: "none",
+              width: "170px",
+              height: "36px",
+              fontSize: "18px",
+              // background: "red",
+              borderRadius: "4px",
+              backgroundImage:
+                "linear-gradient(to bottom right, #EE0034, #8000FF)",
+              overflow: "hidden",
+
+              //
+              padding: "2px",
+              "&:hover": {
+                backgroundImage:
+                  "linear-gradient(to bottom right, #EE0034, #8000FF)",
+                color: "#fff",
+              },
             }}
-          />
+          >
+            <Typography
+              sx={{
+                width: "100%",
+                height: "100%",
+                background: "white",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                textTransform: "capitalize",
+                "&:hover": {
+                  backgroundImage:
+                    "linear-gradient(to bottom right, #EE0034, #8000FF)",
+                  color: "#fff",
+                  border: "none",
+                },
+              }}
+            >
+              Event Category{" "}
+              <span
+                style={{
+                  transform: "rotate(90deg)",
+                  margin: "0.5rem",
+                  fontSize: "19px",
+                }}
+              >
+                {">"}
+              </span>
+            </Typography>
+          </Button>
         </Stack>
         <Stack spacing={2} sx={{ margin: "1.5rem 0" }}>
           <SecondCards />
@@ -273,7 +383,7 @@ function UpcomingEventCards() {
                 // onClick={handleClick}
                 sx={{
                   padding: "1.2rem 1rem",
-                  border: "1px solid #EE0034",
+                  border: "1px solid #b23e8b",
                   color: "#EE0034",
                 }}
               />
@@ -283,7 +393,7 @@ function UpcomingEventCards() {
                 // onClick={handleClick}
                 sx={{
                   padding: "1.2rem 1rem",
-                  border: "1px solid #EE0034",
+                  border: "1px solid #b23e8b",
                   color: "#EE0034",
                 }}
               />
@@ -293,7 +403,7 @@ function UpcomingEventCards() {
                 // onClick={handleClick}
                 sx={{
                   padding: "1.2rem 1rem",
-                  border: "1px solid #EE0034",
+                  border: "1px solid #b23e8b",
                   color: "#EE0034",
                 }}
               />
@@ -303,7 +413,7 @@ function UpcomingEventCards() {
                 // onClick={handleClick}
                 sx={{
                   padding: "1.2rem 1rem",
-                  border: "1px solid #EE0034",
+                  border: "1px solid #b23e8b",
                   color: "#EE0034",
                 }}
               />

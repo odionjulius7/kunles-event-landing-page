@@ -12,7 +12,9 @@ import Avatar from "@mui/material/Avatar";
 
 export const SecondCards = () => {
   return (
-    <Card sx={{ width: "95%" }}>
+    <Card
+      sx={{ width: "95%", boxShadow: "0px 10px 60px rgba(103, 34, 181, 0.08)" }}
+    >
       {" "}
       <List sx={{ width: "100%", bgcolor: "background.paper" }}>
         <ListItem sx={{ margin: "0.4rem 0" }}>
