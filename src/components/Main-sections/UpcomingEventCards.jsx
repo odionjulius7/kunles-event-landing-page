@@ -13,6 +13,7 @@ import Typography from "@mui/material/Typography";
 import DropDownBtn from "../DropDownBtn";
 import CardUserImg from "../CardUserImg";
 import { SecondCards } from "../Cards/SecondCards";
+import { ArrowDropDown, ArrowDropDownOutlined } from "@mui/icons-material";
 
 // big.png
 
@@ -21,7 +22,14 @@ function UpcomingEventCards() {
     <Stack
       direction={{ xs: "column", sm: "column", md: "row" }}
       spacing={3}
-      sx={{ margin: "7rem 0" }}
+      sx={{
+        margin: {
+          xs: "4rem 0",
+          sm: "4rem 0",
+          md: "7rem 0",
+          lg: "7rem 0",
+        },
+      }}
     >
       <Stack
         sx={{
@@ -34,7 +42,17 @@ function UpcomingEventCards() {
           },
         }}
       >
-        <Stack sx={{ margin: "1rem 0" }}>
+        <Stack
+          sx={{
+            margin: "1rem 0",
+            textAlign: {
+              xs: "center",
+              sm: "center",
+              md: "start",
+              lg: "start",
+            },
+          }}
+        >
           <Typography
             sx={{ fontSize: "30px", fontWeight: 500 }}
             gutterBottom
@@ -51,7 +69,18 @@ function UpcomingEventCards() {
               Events
             </Typography>
           </Typography>
-          <img width={155} src={LineImg} alt="" />
+          <Stack
+            sx={{
+              width: {
+                xs: "100%",
+                sm: "100%",
+                md: "20%",
+                lg: "20%",
+              },
+            }}
+          >
+            <img width={"100%"} src={LineImg} alt="" />
+          </Stack>
         </Stack>
         {/* First Card */}
         <Stack sx={{ margin: "1rem 0" }}>
@@ -76,7 +105,20 @@ function UpcomingEventCards() {
                 gutterBottom
                 variant="h6"
                 component="div"
-                sx={{ fontSize: "18px", fontWeight: 600 }}
+                sx={{
+                  fontSize: {
+                    xs: "14px",
+                    sm: "14px",
+                    md: "17px",
+                    lg: "18px",
+                  },
+                  fontWeight: {
+                    xs: 700,
+                    sm: 600,
+                    md: 600,
+                    lg: 600,
+                  },
+                }}
               >
                 Front-End Web Development: 5 Features of a Great Website (Web
                 Design)
@@ -84,7 +126,16 @@ function UpcomingEventCards() {
               <Typography
                 variant="body2"
                 color="text.secondary"
-                sx={{ fontSize: "14px", fontWeight: 400, lineHeight: "25px" }}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                  },
+                  fontWeight: 400,
+                  lineHeight: "25px",
+                }}
               >
                 A good website, which serves as your company’s front door, is
                 the most crucial marketing component. If all you need is a
@@ -98,7 +149,17 @@ function UpcomingEventCards() {
               {/*  */}
             </CardContent>
             {/* </CardActionArea> */}
-            <CardActions>
+            <CardActions
+              sx={{
+                justifyContent: {
+                  xs: "center",
+                  sm: "start",
+                  md: "start",
+                  lg: "start",
+                },
+                margin: "1rem 0",
+              }}
+            >
               <Button
                 variant="contained"
                 size="small"
@@ -109,7 +170,12 @@ function UpcomingEventCards() {
                   padding: "10px, 30px, 10px, 30px",
                   height: "40px",
                   width: "120px",
-                  fontSize: "18px",
+                  fontSize: {
+                    xs: "14px",
+                    sm: "15px",
+                    md: "18px",
+                    lg: "18px",
+                  },
                   fontWeight: 500,
 
                   textTransform: "capitalize",
@@ -124,10 +190,20 @@ function UpcomingEventCards() {
                 sx={{
                   border: "none",
                   color: "#EE0034",
-                  width: "150px",
+                  width: {
+                    xs: "120px",
+                    sm: "140px",
+                    md: "150px",
+                    lg: "150px",
+                  },
                   height: "40px",
                   padding: "2px",
-                  fontSize: "18px",
+                  fontSize: {
+                    xs: "14px",
+                    sm: "15px",
+                    md: "18px",
+                    lg: "18px",
+                  },
                   background: "red",
                   borderRadius: "4px",
                   backgroundImage:
@@ -156,6 +232,12 @@ function UpcomingEventCards() {
                       color: "#fff",
                       border: "none",
                     },
+                    fontSize: {
+                      xs: "14px",
+                      sm: "15px",
+                      md: "18px",
+                      lg: "18px",
+                    },
                   }}
                 >
                   Not Attending
@@ -170,7 +252,7 @@ function UpcomingEventCards() {
             sx={{
               maxWidth: "100%",
               padding: "15px",
-              // border: "1px solid #ccc",
+              // marginBottom: "1rem",
               boxShadow: "0px 10px 60px rgba(103, 34, 181, 0.08)",
             }}
           >
@@ -180,14 +262,27 @@ function UpcomingEventCards() {
               height="140"
               image={BgImg}
               alt="green iguana"
-              sx={{ height: "310px", transition: "all 0.3s ease" }}
+              sx={{ height: "310px" }}
             />
             <CardContent sx={{ padding: "5px" }}>
               <Typography
                 gutterBottom
                 variant="h6"
                 component="div"
-                sx={{ fontSize: "18px", fontWeight: 600 }}
+                sx={{
+                  fontSize: {
+                    xs: "14px",
+                    sm: "14px",
+                    md: "17px",
+                    lg: "18px",
+                  },
+                  fontWeight: {
+                    xs: 700,
+                    sm: 600,
+                    md: 600,
+                    lg: 600,
+                  },
+                }}
               >
                 Front-End Web Development: 5 Features of a Great Website (Web
                 Design)
@@ -195,7 +290,16 @@ function UpcomingEventCards() {
               <Typography
                 variant="body2"
                 color="text.secondary"
-                sx={{ fontSize: "14px", fontWeight: 400, lineHeight: "25px" }}
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                  },
+                  fontWeight: 400,
+                  lineHeight: "25px",
+                }}
               >
                 A good website, which serves as your company’s front door, is
                 the most crucial marketing component. If all you need is a
@@ -204,10 +308,22 @@ function UpcomingEventCards() {
                 of pre-made templates and themes that make creating a website
                 [...]
               </Typography>
+              {/*  */}
               <CardUserImg />
+              {/*  */}
             </CardContent>
             {/* </CardActionArea> */}
-            <CardActions>
+            <CardActions
+              sx={{
+                justifyContent: {
+                  xs: "center",
+                  sm: "start",
+                  md: "start",
+                  lg: "start",
+                },
+                margin: "1rem 0",
+              }}
+            >
               <Button
                 variant="contained"
                 size="small"
@@ -215,27 +331,43 @@ function UpcomingEventCards() {
                 sx={{
                   backgroundImage:
                     "linear-gradient(to bottom right, #EE0034, #8000FF)",
-                  padding: "10px 30px",
+                  padding: "10px, 30px, 10px, 30px",
                   height: "40px",
                   width: "120px",
-                  fontSize: "18px",
+                  fontSize: {
+                    xs: "14px",
+                    sm: "15px",
+                    md: "18px",
+                    lg: "18px",
+                  },
                   fontWeight: 500,
+
                   textTransform: "capitalize",
                 }}
               >
                 Attending
               </Button>
               <Button
-                variant="outlined"
+                variant="text"
                 size="small"
                 color="primary"
                 sx={{
                   border: "none",
                   color: "#EE0034",
-                  width: "150px",
+                  width: {
+                    xs: "120px",
+                    sm: "140px",
+                    md: "150px",
+                    lg: "150px",
+                  },
                   height: "40px",
                   padding: "2px",
-                  fontSize: "18px",
+                  fontSize: {
+                    xs: "14px",
+                    sm: "15px",
+                    md: "18px",
+                    lg: "18px",
+                  },
                   background: "red",
                   borderRadius: "4px",
                   backgroundImage:
@@ -263,6 +395,12 @@ function UpcomingEventCards() {
                         "linear-gradient(to bottom right, #EE0034, #8000FF)",
                       color: "#fff",
                       border: "none",
+                    },
+                    fontSize: {
+                      xs: "14px",
+                      sm: "15px",
+                      md: "18px",
+                      lg: "18px",
                     },
                   }}
                 >
@@ -298,6 +436,18 @@ function UpcomingEventCards() {
               backgroundImage:
                 "linear-gradient(to bottom right, #EE0034, #8000FF)",
               textTransform: "capitalize",
+              fontSize: {
+                xs: "14px",
+                sm: "15px",
+                md: "18px",
+                lg: "18px",
+              },
+              padding: {
+                xs: "6px 8px",
+                sm: "6px 16px",
+                md: "6px 16px",
+                lg: "6px 16px",
+              },
             }}
           />
           <Button
@@ -306,16 +456,24 @@ function UpcomingEventCards() {
               textTransform: "capitalize",
               color: "#EE0034",
               border: "none",
-              width: "170px",
+              width: {
+                xs: "140px",
+                sm: "160px",
+                md: "170px",
+                lg: "170px",
+              },
               height: "36px",
-              fontSize: "18px",
+              fontSize: {
+                xs: "14px",
+                sm: "15px",
+                md: "18px",
+                lg: "18px",
+              },
               // background: "red",
               borderRadius: "4px",
               backgroundImage:
                 "linear-gradient(to bottom right, #EE0034, #8000FF)",
               overflow: "hidden",
-
-              //
               padding: "2px",
               "&:hover": {
                 backgroundImage:
@@ -339,50 +497,97 @@ function UpcomingEventCards() {
                   color: "#fff",
                   border: "none",
                 },
+                fontSize: {
+                  xs: "14px",
+                  sm: "15px",
+                  md: "18px",
+                  lg: "18px",
+                },
               }}
             >
               Event Category{" "}
-              <span
+              {/* <span
                 style={{
                   transform: "rotate(90deg)",
                   margin: "0.5rem",
-                  fontSize: "19px",
+                  // fontSize: "15px",
                 }}
               >
                 {">"}
-              </span>
+              </span> */}
+              <ArrowDropDownOutlined />
             </Typography>
           </Button>
         </Stack>
-        <Stack spacing={2} sx={{ margin: "1.5rem 0" }}>
+        <Stack
+          spacing={2}
+          sx={{
+            margin: {
+              xs: "1rem 0",
+              sm: "1.3rem 0",
+              md: "1.5rem 0",
+              lg: "1.5rem 0",
+            },
+          }}
+        >
           <SecondCards />
           <Stack>
-            <Stack sx={{ margin: "1.5rem 0" }}>
-              <Typography
-                sx={{ fontSize: "30px", fontWeight: 500 }}
-                gutterBottom
-                variant="h2"
-                component="div"
-              >
-                Trending{" "}
+            <Stack
+              direction="row"
+              sx={{
+                margin: "1.5rem 0",
+                justifyContent: {
+                  xs: "center",
+                  sm: "center",
+                  md: "start",
+                  lg: "start",
+                },
+              }}
+            >
+              <Stack>
                 <Typography
-                  sx={{ color: "#EE0034", fontSize: "30px", fontWeight: 500 }}
+                  sx={{ fontSize: "30px", fontWeight: 500 }}
                   gutterBottom
                   variant="h2"
-                  component="span"
+                  component="div"
                 >
-                  Events
+                  Trending{" "}
                 </Typography>
+                <img width={130} src={LineImg} alt="" />
+              </Stack>
+              <Typography
+                sx={{ color: "#EE0034", fontSize: "30px", fontWeight: 500 }}
+                gutterBottom
+                variant="h2"
+                component="span"
+              >
+                Events
               </Typography>
-              <img width={130} src={LineImg} alt="" />
             </Stack>
-            <Stack direction="row" spacing={2} sx={{ margin: "1rem" }}>
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{
+                margin: {
+                  xs: "0.4rem",
+                  sm: "0.4rem",
+                  md: "1rem",
+                  lg: "1rem",
+                },
+                justifyContent: "center",
+              }}
+            >
               <Chip
                 label="Wedding"
                 variant="outlined"
                 // onClick={handleClick}
                 sx={{
-                  padding: "1.2rem 1rem",
+                  padding: {
+                    xs: "0rem",
+                    sm: "0.6rem 0.5rem",
+                    md: "1.2rem 1rem",
+                    lg: "1.2rem 1rem",
+                  },
                   border: "1px solid #b23e8b",
                   color: "#EE0034",
                 }}
@@ -392,7 +597,12 @@ function UpcomingEventCards() {
                 variant="outlined"
                 // onClick={handleClick}
                 sx={{
-                  padding: "1.2rem 1rem",
+                  padding: {
+                    xs: "0rem",
+                    sm: "0.6rem 0.5rem",
+                    md: "1.2rem 1rem",
+                    lg: "1.2rem 1rem",
+                  },
                   border: "1px solid #b23e8b",
                   color: "#EE0034",
                 }}
@@ -402,7 +612,12 @@ function UpcomingEventCards() {
                 variant="outlined"
                 // onClick={handleClick}
                 sx={{
-                  padding: "1.2rem 1rem",
+                  padding: {
+                    xs: "0rem",
+                    sm: "0.6rem 0.5rem",
+                    md: "1.2rem 1rem",
+                    lg: "1.2rem 1rem",
+                  },
                   border: "1px solid #b23e8b",
                   color: "#EE0034",
                 }}
@@ -412,7 +627,12 @@ function UpcomingEventCards() {
                 variant="outlined"
                 // onClick={handleClick}
                 sx={{
-                  padding: "1.2rem 1rem",
+                  padding: {
+                    xs: "0rem",
+                    sm: "0.6rem 0.5rem",
+                    md: "1.2rem 1rem",
+                    lg: "1.2rem 1rem",
+                  },
                   border: "1px solid #b23e8b",
                   color: "#EE0034",
                 }}

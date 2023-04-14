@@ -16,12 +16,24 @@ const TriangularStack = styled(Stack)({
   padding: "0.2rem",
   outline: "15px solid white",
   position: "relative",
+  "&::after": {
+    content: "''",
+    position: "absolute",
+    top: "-25px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    width: "30px",
+    height: "2px",
+    backgroundImage: "linear-gradient(to bottom right, #EE0034, #8000FF)",
+    marginBottom: "-0.8rem",
+  },
   "&::before": {
     content: "''",
     position: "absolute",
     top: "-20px",
     left: "50%",
     transform: "translateX(-50%)",
+
     width: 0,
     height: 0,
     borderLeft: "20px solid transparent",
@@ -108,7 +120,7 @@ function Header() {
             <Typography
               variant="subtitle1"
               component="span"
-              sx={{ fontSize: "17px" }}
+              sx={{ fontSize: "17px", cursor: "pointer" }}
             >
               Home
             </Typography>
@@ -131,28 +143,34 @@ function Header() {
                 text="User"
                 children={
                   <TriangularStack>
-                    <Button sx={{ color: "#0F1022" }}>Affiliate Program</Button>
-                    <Button sx={{ color: "#0F1022" }}>Agents</Button>
-                    <Button sx={{ color: "#0F1022" }}>Help</Button>
-                    <Button sx={{ color: "#0F1022" }}>Contact</Button>
+                    <Button sx={{ color: "#0F1022" }}>Organisations</Button>
+                    <Button sx={{ color: "#0F1022" }}>Schools</Button>
+                    <Button sx={{ color: "#0F1022" }}>Individual</Button>
+                    <Button sx={{ color: "#0F1022" }}>Govt</Button>
                   </TriangularStack>
                 }
               />
             </Typography>
             <Typography variant="subtitle1" component="span">
               <BasicTooltip
-                text="User"
+                text="Product"
                 children={
                   <TriangularStack>
-                    <Button sx={{ color: "#0F1022" }}>Affiliate Program</Button>
-                    <Button sx={{ color: "#0F1022" }}>Agents</Button>
-                    <Button sx={{ color: "#0F1022" }}>Help</Button>
-                    <Button sx={{ color: "#0F1022" }}>Contact</Button>
+                    <Button sx={{ color: "#0F1022" }}>
+                      Buy Motor Insurance
+                    </Button>
+                    <Button sx={{ color: "#0F1022" }}>Airtime</Button>
+                    <Button sx={{ color: "#0F1022" }}>Data</Button>
+                    <Button sx={{ color: "#0F1022" }}>School Manager</Button>
                   </TriangularStack>
                 }
               />
             </Typography>
-            <Typography variant="subtitle1" component="span">
+            <Typography
+              variant="subtitle1"
+              component="span"
+              sx={{ cursor: "pointer" }}
+            >
               About
             </Typography>
           </Stack>
@@ -220,7 +238,7 @@ function Header() {
           direction="row"
           spacing={{
             xs: 6,
-            sm: 8,
+            sm: 9,
             md: 12,
             lg: 14,
           }}
@@ -236,8 +254,8 @@ function Header() {
             },
             // left: "10%",
             left: {
-              xs: "6%",
-              sm: "7%",
+              xs: "8%",
+              sm: "8%",
               md: "10%",
               lg: "10%",
             },

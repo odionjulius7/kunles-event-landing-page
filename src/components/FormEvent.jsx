@@ -14,20 +14,45 @@ const FormEvent = () => {
     <Stack
       sx={{
         // height: "400px",
-        margin: "5rem 0 7rem 0",
+        margin: {
+          xs: "3.4rem 0 5rem 0",
+          sm: "4rem 0 6rem 0",
+          md: "5rem 0 7rem 0",
+          lg: "5rem 0 7rem 0",
+        },
         alignItems: "center",
       }}
     >
       <Card
         sx={{
-          width: "70%",
-          padding: "30px",
+          width: {
+            xs: "100%",
+            sm: "90%",
+            md: "70%",
+            lg: "70%",
+          },
+          padding: {
+            xs: "15px",
+            sm: "20px",
+            md: "30px",
+            lg: "30px",
+          },
         }}
       >
         <Stack style={{ textAlign: "center" }}>
           <Stack
-            direction="row"
-            spacing={3}
+            direction={{
+              xs: "column",
+              sm: "column",
+              md: "row",
+              lg: "row",
+            }}
+            spacing={{
+              xs: 1,
+              sm: 2,
+              md: 3,
+              lg: 3,
+            }}
             sx={{ width: "100%", margin: "1rem 0" }}
           >
             <Stack sx={{ textAlign: "start", width: "100%" }}>
@@ -42,6 +67,9 @@ const FormEvent = () => {
                 First name
               </label>
               <TextField
+                sx={{
+                  padding: "0px",
+                }}
                 id="outlined-basic"
                 variant="outlined"
                 placeholder="Type here..."
@@ -66,8 +94,18 @@ const FormEvent = () => {
             </Stack>
           </Stack>
           <Stack
-            direction="row"
-            spacing={3}
+            direction={{
+              xs: "column",
+              sm: "column",
+              md: "row",
+              lg: "row",
+            }}
+            spacing={{
+              xs: 1,
+              sm: 2,
+              md: 3,
+              lg: 3,
+            }}
             sx={{ width: "100%", margin: "1rem 0" }}
           >
             <Stack sx={{ textAlign: "start", width: "100%" }}>

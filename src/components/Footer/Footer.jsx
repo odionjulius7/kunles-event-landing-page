@@ -27,23 +27,58 @@ const Footer = () => {
     >
       <Container>
         <Stack
-          direction="row"
+          direction={{
+            xs: "column",
+            md: "row",
+          }}
           // spacing={3}
-          sx={{ justifyContent: "space-between", paddingTop: "5.5rem" }}
+          sx={{
+            justifyContent: {
+              xs: "center",
+              md: "space-between",
+            },
+            alignItems: {
+              xs: "center",
+              md: "unset",
+            },
+            paddingTop: {
+              xs: "2rem",
+              md: "5.5rem",
+            },
+          }}
         >
-          <Typography variant="h5" component="div">
+          <Typography
+            variant="h5"
+            component="div"
+            sx={{
+              margin: {
+                xs: "0rem 0 2rem 0",
+                md: "0rem",
+              },
+              fontSize: {
+                xs: "21px",
+                md: "24px",
+              },
+            }}
+          >
             MY EVENT
           </Typography>
           <Stack
             direction="row"
-            spacing={7}
+            spacing={{
+              xs: 2,
+              md: 7,
+            }}
             sx={{ fontSize: "16", fontWeight: 400 }}
           >
             <Typography
               variant="h5"
               component="div"
               sx={{
-                fontSize: "20px",
+                fontSize: {
+                  xs: "16px",
+                  md: "20px",
+                },
                 fontWeight: 400,
                 color: "#ffffff94",
                 marginBottom: "1rem",
@@ -56,7 +91,10 @@ const Footer = () => {
                 variant="h5"
                 component="div"
                 sx={{
-                  fontSize: "20px",
+                  fontSize: {
+                    xs: "16px",
+                    md: "20px",
+                  },
                   fontWeight: 400,
                   color: "#ffffff94",
                   marginBottom: "1rem",
@@ -64,16 +102,52 @@ const Footer = () => {
               >
                 Company
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Affiliate Program
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Agents
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Help
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Contact Us
               </Typography>
             </Stack>
@@ -82,7 +156,10 @@ const Footer = () => {
                 variant="h5"
                 component="div"
                 sx={{
-                  fontSize: "20px",
+                  fontSize: {
+                    xs: "16px",
+                    md: "20px",
+                  },
                   fontWeight: 400,
                   color: "#ffffff94",
                   marginBottom: "1rem",
@@ -90,16 +167,52 @@ const Footer = () => {
               >
                 Users
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Organisation
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Schools
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Individual
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Govt
               </Typography>
             </Stack>
@@ -108,7 +221,10 @@ const Footer = () => {
                 variant="h5"
                 component="div"
                 sx={{
-                  fontSize: "20px",
+                  fontSize: {
+                    xs: "16px",
+                    md: "20px",
+                  },
                   fontWeight: 400,
                   color: "#ffffff94",
                   marginBottom: "1rem",
@@ -116,16 +232,52 @@ const Footer = () => {
               >
                 Products
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Buy Motor Insurance
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Airtime
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 Data
               </Typography>
-              <Typography variant="subtitle1" component="div">
+              <Typography
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  fontSize: {
+                    xs: "13px",
+                    md: "16px",
+                  },
+                }}
+              >
                 School Manager
               </Typography>
             </Stack>
@@ -134,7 +286,10 @@ const Footer = () => {
               variant="h6"
               component="div"
               sx={{
-                fontSize: "20px",
+                fontSize: {
+                  xs: "16px",
+                  md: "20px",
+                },
                 fontWeight: 400,
                 color: "#ffffff94",
                 marginBottom: "1rem",
@@ -144,9 +299,42 @@ const Footer = () => {
             </Typography>
           </Stack>
         </Stack>
-        <Divider sx={{ backgroundColor: "#F5F5F5", margin: "5rem 0 2rem 0" }} />
-        <Stack direction="row" sx={{ justifyContent: "space-between" }}>
-          <Typography component="div">
+        <Divider
+          sx={{
+            backgroundColor: "#F5F5F5",
+            margin: {
+              xs: "3rem 0 2rem 0",
+              sm: "5rem 0 2rem 0",
+            },
+          }}
+        />
+        <Stack
+          direction={{
+            xs: "column",
+            sm: "row",
+            md: "row",
+          }}
+          sx={{
+            justifyContent: "space-between",
+            alignItems: {
+              xs: "center",
+              sm: "unset",
+            },
+          }}
+        >
+          <Typography
+            component="div"
+            sx={{
+              fontSize: {
+                xs: "13px",
+                md: "16px",
+              },
+              marginBottom: {
+                xs: "1rem",
+                sm: "0rem",
+              },
+            }}
+          >
             © 2023 MY EVENT. All Right Reserved
           </Typography>
           <Stack direction="row" spacing={2}>

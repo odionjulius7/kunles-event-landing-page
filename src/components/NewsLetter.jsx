@@ -37,7 +37,12 @@ const NewsLetter = () => {
                 component="div"
                 sx={{
                   fontWeight: 600,
-                  fontSize: "28px",
+                  fontSize: {
+                    xs: "22px",
+                    sm: "25px",
+                    md: "28px",
+                    lg: "28px",
+                  },
                   color: "#ffffff",
                 }}
               >
@@ -48,7 +53,12 @@ const NewsLetter = () => {
                 color="text.secondary"
                 component="div"
                 sx={{
-                  fontSize: "25px",
+                  fontSize: {
+                    xs: "15px",
+                    sm: "22px",
+                    md: "25px",
+                    lg: "25px",
+                  },
                   fontWeight: 400,
                   margin: "1rem 0",
                   color: "#ffffff",
@@ -75,7 +85,12 @@ const NewsLetter = () => {
               variant="outlined"
               placeholder="Enter your email"
               sx={{
-                width: "50%",
+                width: {
+                  xs: "95%",
+                  sm: "80%",
+                  md: "50%",
+                  lg: "50%",
+                },
                 backgroundColor: "white",
                 borderRadius: "5px",
                 height: "40px",
@@ -92,8 +107,14 @@ const NewsLetter = () => {
                 backgroundImage:
                   "linear-gradient(to bottom right, #EE0034, #8000FF)",
                 height: "40px",
-                width: "120px",
-                fontSize: "18px",
+                width: {
+                  xs: "100px",
+                  md: "120px",
+                },
+                fontSize: {
+                  xs: "15px",
+                  md: "18px",
+                },
                 fontWeight: 400,
                 textTransform: "capitalize",
                 marginLeft: "-0.4rem",
@@ -110,24 +131,3 @@ const NewsLetter = () => {
 };
 
 export default NewsLetter;
-
-//
-{
-  /* <Button
-                variant="contained"
-                size="small"
-                color="primary"
-                sx={{
-                  backgroundImage:
-                    "linear-gradient(to bottom right, #EE0034, #8000FF)",
-                  padding: "10px, 30px, 10px, 30px",
-                  height: "40px",
-                  width: "120px",
-                  fontSize: "18px",
-                  fontWeight: 500,
-                  textTransform: "capitalize",
-                }}
-              >
-                Attending
-              </Button> */
-}

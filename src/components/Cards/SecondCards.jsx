@@ -13,7 +13,21 @@ import Avatar from "@mui/material/Avatar";
 export const SecondCards = () => {
   return (
     <Card
-      sx={{ width: "95%", boxShadow: "0px 10px 60px rgba(103, 34, 181, 0.08)" }}
+      sx={{
+        width: {
+          xs: "100%",
+          sm: "100%",
+          md: "95%",
+          lg: "95%",
+        },
+        marginLeft: {
+          xs: "0.7rem",
+          sm: "0.7rem",
+          md: "0",
+          lg: "0",
+        },
+        boxShadow: "0px 10px 60px rgba(103, 34, 181, 0.08)",
+      }}
     >
       {" "}
       <List sx={{ width: "100%", bgcolor: "background.paper" }}>
@@ -32,11 +46,34 @@ export const SecondCards = () => {
           </ListItemAvatar>
           <ListItemText
             primary={
-              <Typography color="#6722B5">
+              <Typography
+                color="#6722B5"
+                sx={{
+                  fontSize: {
+                    xs: "14px",
+                    sm: "15px",
+                    md: "16px",
+                    lg: "16px",
+                  },
+                }}
+              >
                 Graphic Design Hacks: Five Steps to Follow
               </Typography>
             }
-            secondary={"Sep 16 2022, 3 comments"}
+            secondary={
+              <Typography
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                  },
+                }}
+              >
+                Sep 16 2022, 3 comments
+              </Typography>
+            }
           />
         </ListItem>
         <ListItem sx={{ margin: "0.4rem 0" }}>
@@ -54,11 +91,34 @@ export const SecondCards = () => {
           </ListItemAvatar>
           <ListItemText
             primary={
-              <Typography color="#6722B5">
-                Becoming a Successful Blogger In Tech
+              <Typography
+                color="#6722B5"
+                sx={{
+                  fontSize: {
+                    xs: "14px",
+                    sm: "15px",
+                    md: "16px",
+                    lg: "16px",
+                  },
+                }}
+              >
+                Graphic Design Hacks: Five Steps to Follow
               </Typography>
             }
-            secondary={"Sep 15 2022, 3 comments"}
+            secondary={
+              <Typography
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                  },
+                }}
+              >
+                Sep 16 2022, 3 comments
+              </Typography>
+            }
           />
         </ListItem>
         <ListItem sx={{ margin: "0.4rem 0" }}>
@@ -76,11 +136,34 @@ export const SecondCards = () => {
           </ListItemAvatar>
           <ListItemText
             primary={
-              <Typography color="#6722B5">
-                Tech Movies to Watch for Inspiration
+              <Typography
+                color="#6722B5"
+                sx={{
+                  fontSize: {
+                    xs: "14px",
+                    sm: "15px",
+                    md: "16px",
+                    lg: "16px",
+                  },
+                }}
+              >
+                Graphic Design Hacks: Five Steps to Follow
               </Typography>
             }
-            secondary={"Sep 14 2022, 3 comments"}
+            secondary={
+              <Typography
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                  },
+                }}
+              >
+                Sep 16 2022, 3 comments
+              </Typography>
+            }
           />
         </ListItem>
         <ListItem sx={{ margin: "0.4rem 0" }}>
@@ -98,11 +181,34 @@ export const SecondCards = () => {
           </ListItemAvatar>
           <ListItemText
             primary={
-              <Typography color="#6722B5">
-                Digital Evolution in Nigeria
+              <Typography
+                color="#6722B5"
+                sx={{
+                  fontSize: {
+                    xs: "14px",
+                    sm: "15px",
+                    md: "16px",
+                    lg: "16px",
+                  },
+                }}
+              >
+                Graphic Design Hacks: Five Steps to Follow
               </Typography>
             }
-            secondary={"Sep 16 2022, 3 comments"}
+            secondary={
+              <Typography
+                sx={{
+                  fontSize: {
+                    xs: "12px",
+                    sm: "13px",
+                    md: "14px",
+                    lg: "14px",
+                  },
+                }}
+              >
+                Sep 16 2022, 3 comments
+              </Typography>
+            }
           />
         </ListItem>
       </List>

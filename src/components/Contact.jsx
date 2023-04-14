@@ -14,7 +14,16 @@ const Contact = () => {
     <Stack>
       {" "}
       <Stack
-        sx={{ width: "100%", textAlign: "center", margin: "7rem 0 3rem 0" }}
+        sx={{
+          width: "100%",
+          textAlign: "center",
+          margin: {
+            xs: "3rem 0 2rem 0",
+            sm: "3rem 0 2rem 0",
+            md: "7rem 0 3rem 0",
+            lg: "7rem 0 3rem 0",
+          },
+        }}
       >
         <CardContent sx={{ flex: "1 0 auto", padding: "0px" }}>
           <Typography
@@ -34,9 +43,19 @@ const Contact = () => {
             color="text.secondary"
             component="div"
             sx={{
-              fontSize: "36px",
+              fontSize: {
+                xs: "20px",
+                sm: "28px",
+                md: "36px",
+                lg: "36px",
+              },
               fontWeight: 500,
-              margin: "1rem 0",
+              margin: {
+                xs: "0.5rem 0",
+                sm: "0.8rem 0",
+                md: "1rem 0",
+                lg: "1rem 0",
+              },
               color: "#000714",
             }}
           >
@@ -51,18 +70,32 @@ const Contact = () => {
       <Stack sx={{ width: "100%", position: "relative" }}>
         <CardMedia
           component="img"
-          sx={{ width: "70%", height: "auto", margin: "0 auto" }}
+          sx={{
+            width: {
+              xs: "100%",
+              sm: "100%",
+              md: "70%",
+              lg: "70%",
+            },
+            height: "auto",
+            margin: "0 auto",
+          }}
           image={ImgAvatar2}
           alt="Live from space album cover"
         />
         <CardMedia
           component="img"
           sx={{
-            width: "20px",
-            height: "20px",
+            width: "18px",
+            height: "18px",
             position: "absolute",
             top: "54%",
-            left: "23%",
+            left: {
+              xs: "15%",
+              sm: "18%",
+              md: "23%",
+              lg: "23%",
+            },
           }}
           image={ImgAvatar1}
           alt="Live from space album cover"
@@ -70,8 +103,8 @@ const Contact = () => {
         <CardMedia
           component="img"
           sx={{
-            width: "20px",
-            height: "20px",
+            width: "18px",
+            height: "18px",
             position: "absolute",
             top: "34%",
             right: "43%",
@@ -82,11 +115,16 @@ const Contact = () => {
         <CardMedia
           component="img"
           sx={{
-            width: "20px",
-            height: "20px",
+            width: "18px",
+            height: "18px",
             position: "absolute",
             bottom: "19%",
-            right: "34%",
+            right: {
+              xs: "24%",
+              sm: "25%",
+              md: "34%",
+              lg: "34%",
+            },
           }}
           image={ImgAvatar1}
           alt="Live from space album cover"

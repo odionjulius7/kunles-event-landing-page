@@ -16,25 +16,69 @@ const AboutEvent = () => {
   return (
     <Container>
       <Stack
-        direction="row"
+        direction={{
+          xs: "column",
+          sm: "column",
+          md: "row",
+          lg: "row",
+        }}
         spacing={2}
-        sx={{ alignItems: "center", margin: "2rem 0" }}
+        sx={{
+          alignItems: "center",
+          margin: {
+            xs: "1rem 0",
+            sm: "1rem 0",
+            md: "2rem 0",
+            lg: "2rem 0",
+          },
+        }}
       >
         <Stack
-          direction="row"
+          direction={{
+            xs: "column",
+            sm: "column",
+            md: "row",
+            lg: "row",
+          }}
           spacing={2}
           sx={{ width: "100%", padding: "15px", alignItems: "center" }}
         >
           <Stack spacing={2} sx={{ width: "100%" }}>
             <CardMedia
               component="img"
-              sx={{ width: "90%", height: "50%" }}
+              sx={{
+                width: {
+                  xs: "100%",
+                  sm: "100%",
+                  md: "90%",
+                  lg: "90%",
+                },
+                height: {
+                  xs: "30%",
+                  sm: "30%",
+                  md: "50%",
+                  lg: "50%",
+                },
+              }}
               image={ImgAvatar}
               alt="Live from space album cover"
             />
             <CardMedia
               component="img"
-              sx={{ width: "90%", height: "50%" }}
+              sx={{
+                width: {
+                  xs: "100%",
+                  sm: "100%",
+                  md: "90%",
+                  lg: "90%",
+                },
+                height: {
+                  xs: "30%",
+                  sm: "30%",
+                  md: "50%",
+                  lg: "50%",
+                },
+              }}
               image={ImgAvatar1}
               alt="Live from space album cover"
             />
@@ -42,7 +86,26 @@ const AboutEvent = () => {
           <Stack sx={{ width: "100%" }}>
             <CardMedia
               component="img"
-              sx={{ width: "90%", height: "70%" }}
+              sx={{
+                width: {
+                  xs: "100%",
+                  sm: "100%",
+                  md: "90%",
+                  lg: "90%",
+                },
+                height: {
+                  xs: "30%",
+                  sm: "30%",
+                  md: "50%",
+                  lg: "50%",
+                },
+                display: {
+                  xs: "none",
+                  sm: "none",
+                  md: "block",
+                  lg: "block",
+                },
+              }}
               image={ImgAvatar2}
               alt="Live from space album cover"
             />
@@ -57,6 +120,7 @@ const AboutEvent = () => {
               sx={{
                 fontWeight: 600,
                 fontSize: "24px",
+                textAlign: "center",
                 // marginTop: "2rem",
               }}
             >
@@ -67,9 +131,15 @@ const AboutEvent = () => {
               color="text.secondary"
               component="div"
               sx={{
-                fontSize: "36px",
+                fontSize: {
+                  xs: "26px",
+                  sm: "30px",
+                  md: "36px",
+                  lg: "36px",
+                },
                 fontWeight: 500,
                 margin: "1rem 0",
+                textAlign: "center",
               }}
             >
               The{" "}
@@ -85,7 +155,12 @@ const AboutEvent = () => {
               component="div"
               sx={{
                 fontWeight: 500,
-                fontSize: "15px",
+                fontSize: {
+                  xs: "12px",
+                  sm: "13px",
+                  md: "15px",
+                  lg: "15px",
+                },
               }}
             >
               <p style={{ margin: "0.4rem" }}>

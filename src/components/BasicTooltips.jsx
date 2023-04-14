@@ -23,7 +23,8 @@ export default function BasicTooltip({ children, text }) {
           textTransform: "capitalize",
           transition: ".2s",
           "&:hover": {
-            fontSize: "19px",
+            fontSize: "18px",
+            marginBottom: "10px",
           },
         }}
       >

@@ -16,15 +16,17 @@ function Main() {
   return (
     <>
       <Container
-        sx={{
-          width: "100%",
-          maxWidth: {
-            xs: "97%",
-            sm: "97%",
-            md: "95%",
-            lg: "90%",
-          },
-        }}
+        sx={
+          {
+            // width: "100%",
+            // maxWidth: {
+            //   xs: "97%",
+            //   sm: "97%",
+            //   md: "95%",
+            //   lg: "90%",
+            // },
+          }
+        }
       >
         <Stack>
           <ImgList />
@@ -52,7 +54,7 @@ function Main() {
       <Stack
         sx={{
           background: "#FFB339",
-          minWidth: "100%",
+          // minWidth: "100%",
           // height: "576px",
         }}
       >

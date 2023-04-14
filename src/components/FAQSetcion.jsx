@@ -17,7 +17,15 @@ const FAQSetcion = () => {
   return (
     <Stack sx={{ margin: "2rem 0 7rem 0" }}>
       <CardContent
-        sx={{ flex: "1 0 auto", padding: "0px", margin: "4rem 0 1.5rem 0" }}
+        sx={{
+          flex: "1 0 auto",
+          padding: "0px",
+          margin: "4rem 0 1.5rem 0",
+          textAlign: {
+            xs: "center",
+            md: "start",
+          },
+        }}
       >
         <Typography
           variant="h5"
@@ -35,9 +43,17 @@ const FAQSetcion = () => {
           color="text.secondary"
           component="div"
           sx={{
-            fontSize: "36px",
+            fontSize: {
+              xs: "20px",
+              sm: "30px",
+              md: "36px",
+            },
             fontWeight: 500,
-            margin: "1rem 0",
+            margin: {
+              xs: "0.5rem 0",
+              sm: "1rem 0",
+              md: "1rem 0",
+            },
           }}
         >
           HOW CAN WE <span style={{ color: "#EE0034" }}>HELP YOU?</span>
@@ -48,13 +64,25 @@ const FAQSetcion = () => {
           <Box sx={{ flexGrow: 1, margin: "1rem 0.7rem" }}>
             <AppBar
               position="static"
-              sx={{ backgroundColor: "#ffffff", color: "#000000" }}
+              sx={{
+                backgroundColor: "#ffffff",
+                color: "#000000",
+                cursor: "pointer",
+              }}
             >
               <Toolbar>
                 <Typography
                   variant="h6"
                   component="div"
-                  sx={{ flexGrow: 1, fontSize: "20px", fontWeight: "400" }}
+                  sx={{
+                    flexGrow: 1,
+                    fontSize: {
+                      xs: "14px",
+                      sm: "16px",
+                      md: "20px",
+                    },
+                    fontWeight: "400",
+                  }}
                 >
                   Is there a program schedule available for the event?
                 </Typography>
@@ -84,7 +112,15 @@ const FAQSetcion = () => {
                 <Typography
                   variant="h6"
                   component="div"
-                  sx={{ flexGrow: 1, fontSize: "20px", fontWeight: "400" }}
+                  sx={{
+                    flexGrow: 1,
+                    fontSize: {
+                      xs: "15px",
+                      sm: "17px",
+                      md: "20px",
+                    },
+                    fontWeight: "400",
+                  }}
                 >
                   Are there any security measures in place for the event?
                 </Typography>
@@ -114,7 +150,15 @@ const FAQSetcion = () => {
                 <Typography
                   variant="h6"
                   component="div"
-                  sx={{ flexGrow: 1, fontSize: "20px", fontWeight: "400" }}
+                  sx={{
+                    flexGrow: 1,
+                    fontSize: {
+                      xs: "15px",
+                      sm: "17px",
+                      md: "20px",
+                    },
+                    fontWeight: "400",
+                  }}
                 >
                   What is the parking situation at the event venue?
                 </Typography>
@@ -144,7 +188,15 @@ const FAQSetcion = () => {
                 <Typography
                   variant="h6"
                   component="div"
-                  sx={{ flexGrow: 1, fontSize: "20px", fontWeight: "400" }}
+                  sx={{
+                    flexGrow: 1,
+                    fontSize: {
+                      xs: "15px",
+                      sm: "17px",
+                      md: "20px",
+                    },
+                    fontWeight: "400",
+                  }}
                 >
                   Is there accessibility for guests with disabilities at the
                   event venue?
@@ -175,7 +227,15 @@ const FAQSetcion = () => {
                 <Typography
                   variant="h6"
                   component="div"
-                  sx={{ flexGrow: 1, fontSize: "20px", fontWeight: "400" }}
+                  sx={{
+                    flexGrow: 1,
+                    fontSize: {
+                      xs: "15px",
+                      sm: "17px",
+                      md: "20px",
+                    },
+                    fontWeight: "400",
+                  }}
                 >
                   How can I purchase tickets for the event?
                 </Typography>

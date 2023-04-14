@@ -13,24 +13,58 @@ import QuotationImg from "../img/questionMark.png";
 
 const MemberShip = () => {
   // const [selectedValue, setSelectedValue] = React.useState("a");
-
   // const handleChange = (event) => {
   //   setSelectedValue(event.target.value);
   // };
-  //
   // const theme = useTheme();
   return (
-    <Stack sx={{ margin: "4.5rem 0 3.4rem 0" }}>
-      <Stack sx={{ margin: "2rem 0 3rem 0", textAlign: "center" }}>
+    <Stack
+      sx={{
+        margin: {
+          xs: "1.5rem 0 1.4rem 0",
+          sm: "2.5rem 0 2.1rem 0",
+          md: "4.5rem 0 3.4rem 0",
+          lg: "4.5rem 0 3.4rem 0",
+        },
+      }}
+    >
+      <Stack
+        sx={{
+          margin: {
+            xs: "1rem 0 1rem 0",
+            sm: "1rem 0 1rem 0",
+            md: "2rem 0 3rem 0",
+            lg: "2rem 0 3rem 0",
+          },
+          textAlign: "center",
+        }}
+      >
         <Typography
-          sx={{ fontSize: "48px", fontWeight: 600 }}
+          sx={{
+            fontSize: {
+              xs: "24px",
+              sm: "34px",
+              md: "48px",
+              lg: "48px",
+            },
+            fontWeight: 600,
+          }}
           gutterBottom
           variant="h2"
           component="div"
         >
           What Members{" "}
           <Typography
-            sx={{ color: "#EE0034", fontSize: "48px", fontWeight: 600 }}
+            sx={{
+              color: "#EE0034",
+              fontSize: {
+                xs: "24px",
+                sm: "34px",
+                md: "48px",
+                lg: "48px",
+              },
+              fontWeight: 600,
+            }}
             gutterBottom
             variant="h2"
             component="span"
@@ -40,25 +74,43 @@ const MemberShip = () => {
         </Typography>
       </Stack>
       <Stack direction={{ xs: "column", sm: "column", md: "row" }} spacing={3}>
-        <Card sx={{ display: "flex", width: "100%", padding: "10px" }}>
+        <Card
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "column", md: "row" },
+            width: "100%",
+            padding: "10px",
+          }}
+        >
           <CardMedia
             component="img"
-            sx={{ width: "45%", height: "350px" }}
+            sx={{
+              width: { xs: "100%", sm: "100%", md: "45%", lg: "45%" },
+              height: { xs: "300px", sm: "350px", md: "350px", lg: "350px" },
+            }}
             image={ImgAvatar}
             alt="Live from space album cover"
           />
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flex: "1 0 auto" }}>
-              <img src={QuotationImg} alt="" />
-              {/* <Typography component="div" variant="h5">
-                Live From Space
-              </Typography> */}
+              <img
+                src={QuotationImg}
+                alt=""
+                width={45}
+                style={{ margin: "0.6rem 0" }}
+              />
               <Typography
                 variant="subtitle1"
                 color="text.secondary"
                 component="div"
                 sx={{
                   fontWeight: 400,
+                  fontSize: {
+                    xs: "14px",
+                    sm: "15px",
+                    md: "16px",
+                    lg: "16px",
+                  },
                 }}
               >
                 "Thank you so much for your help. It's exactly what I've been
@@ -72,7 +124,12 @@ const MemberShip = () => {
                 alignItems: "center",
                 pl: 1,
                 pb: 1,
-                fontSize: "20px",
+                fontSize: {
+                  xs: "16px",
+                  sm: "17px",
+                  md: "20px",
+                  lg: "20px",
+                },
                 fontWeight: 600,
               }}
             >
@@ -82,22 +139,43 @@ const MemberShip = () => {
         </Card>
         {/* Second */}
 
-        <Card sx={{ display: "flex", width: "100%", padding: "10px" }}>
+        <Card
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "column", md: "row" },
+            width: "100%",
+            padding: "10px",
+          }}
+        >
           <CardMedia
             component="img"
-            sx={{ width: "45%", height: "350px" }}
+            sx={{
+              width: { xs: "100%", sm: "100%", md: "45%", lg: "45%" },
+              height: { xs: "300px", sm: "350px", md: "350px", lg: "350px" },
+            }}
             image={ImgAvatar}
             alt="Live from space album cover"
           />
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flex: "1 0 auto" }}>
-              <img src={QuotationImg} alt="" />
+              <img
+                src={QuotationImg}
+                alt=""
+                width={45}
+                style={{ margin: "0.6rem 0" }}
+              />
               <Typography
                 variant="subtitle1"
                 color="text.secondary"
                 component="div"
                 sx={{
                   fontWeight: 400,
+                  fontSize: {
+                    xs: "14px",
+                    sm: "15px",
+                    md: "16px",
+                    lg: "16px",
+                  },
                 }}
               >
                 "Thank you so much for your help. It's exactly what I've been
@@ -111,7 +189,12 @@ const MemberShip = () => {
                 alignItems: "center",
                 pl: 1,
                 pb: 1,
-                fontSize: "20px",
+                fontSize: {
+                  xs: "16px",
+                  sm: "17px",
+                  md: "20px",
+                  lg: "20px",
+                },
                 fontWeight: 600,
               }}
             >
@@ -123,7 +206,15 @@ const MemberShip = () => {
       <Stack
         direction="row"
         spacing={2}
-        sx={{ margin: "4rem 0", justifyContent: "center" }}
+        sx={{
+          margin: {
+            xs: "2rem 0",
+            sm: "3rem 0",
+            md: "4rem 0",
+            lg: "4rem 0",
+          },
+          justifyContent: "center",
+        }}
       >
         <div
           style={{
