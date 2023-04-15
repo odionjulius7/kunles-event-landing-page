@@ -169,7 +169,12 @@ function UpcomingEventCards() {
                     "linear-gradient(to bottom right, #EE0034, #8000FF)",
                   padding: "10px, 30px, 10px, 30px",
                   height: "40px",
-                  width: "120px",
+                  width: {
+                    xs: "120px",
+                    sm: "140px",
+                    md: "150px",
+                    lg: "150px",
+                  },
                   fontSize: {
                     xs: "14px",
                     sm: "15px",
@@ -333,7 +338,12 @@ function UpcomingEventCards() {
                     "linear-gradient(to bottom right, #EE0034, #8000FF)",
                   padding: "10px, 30px, 10px, 30px",
                   height: "40px",
-                  width: "120px",
+                  width: {
+                    xs: "120px",
+                    sm: "140px",
+                    md: "150px",
+                    lg: "150px",
+                  },
                   fontSize: {
                     xs: "14px",
                     sm: "15px",
@@ -341,7 +351,6 @@ function UpcomingEventCards() {
                     lg: "18px",
                   },
                   fontWeight: 500,
-
                   textTransform: "capitalize",
                 }}
               >
@@ -439,8 +448,8 @@ function UpcomingEventCards() {
               fontSize: {
                 xs: "14px",
                 sm: "15px",
-                md: "18px",
-                lg: "18px",
+                md: "17px",
+                lg: "17px",
               },
               padding: {
                 xs: "6px 8px",
@@ -448,6 +457,13 @@ function UpcomingEventCards() {
                 md: "6px 16px",
                 lg: "6px 16px",
               },
+              width: {
+                xs: "120px",
+                sm: "140px",
+                md: "150px",
+                lg: "150px",
+              },
+              height: "36px",
             }}
           />
           <Button
@@ -505,17 +521,7 @@ function UpcomingEventCards() {
                 },
               }}
             >
-              Event Category{" "}
-              {/* <span
-                style={{
-                  transform: "rotate(90deg)",
-                  margin: "0.5rem",
-                  // fontSize: "15px",
-                }}
-              >
-                {">"}
-              </span> */}
-              <ArrowDropDownOutlined />
+              Event Category <ArrowDropDownOutlined />
             </Typography>
           </Button>
         </Stack>
@@ -561,6 +567,7 @@ function UpcomingEventCards() {
                 variant="h2"
                 component="span"
               >
+                {" "}
                 Events
               </Typography>
             </Stack>

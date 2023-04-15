@@ -25,14 +25,14 @@ const CardUserImg = () => {
             sx={{
               width: {
                 xs: "60px",
-                sm: "40px",
-                md: "40px",
+                sm: "60px",
+                md: "80px",
                 lg: "40px",
               },
               height: {
                 xs: "60px",
-                sm: "40px",
-                md: "40px",
+                sm: "60px",
+                md: "80px",
                 lg: "40px",
               },
             }}
@@ -43,8 +43,8 @@ const CardUserImg = () => {
             <Stack
               direction={{
                 xs: "column",
-                sm: "row",
-                md: "row",
+                sm: "column",
+                md: "column",
                 lg: "row",
               }}
               spacing={1}
@@ -52,20 +52,20 @@ const CardUserImg = () => {
                 fontSize: {
                   xs: "11px",
                   sm: "13px",
-                  md: "15px",
+                  md: "14px",
                   lg: "15px",
                 },
                 fontWeight: 500,
                 alignItems: {
                   xs: "start",
-                  sm: "center",
-                  md: "center",
+                  sm: "start",
+                  md: "start",
                   lg: "center",
                 },
                 marginLeft: {
                   xs: "10px",
-                  sm: "0px",
-                  md: "0px",
+                  sm: "15px",
+                  md: "15px",
                   lg: "0px",
                 },
               }}
@@ -76,7 +76,7 @@ const CardUserImg = () => {
                   fontSize: {
                     xs: "11px",
                     sm: "13px",
-                    md: "15px",
+                    md: "13px",
                     lg: "15px",
                   },
                   fontWeight: {
@@ -117,7 +117,7 @@ const CardUserImg = () => {
                     fontSize: {
                       xs: "11px",
                       sm: "13px",
-                      md: "15px",
+                      md: "13px",
                       lg: "15px",
                     },
                     fontWeight: 300,
@@ -154,7 +154,7 @@ const CardUserImg = () => {
                     fontSize: {
                       xs: "11px",
                       sm: "12px",
-                      md: "13px",
+                      md: "12px",
                       lg: "13px",
                     },
                     fontWeight: 400,
@@ -169,7 +169,7 @@ const CardUserImg = () => {
                     fontSize: {
                       xs: "11px",
                       sm: "12px",
-                      md: "13px",
+                      md: "12px",
                       lg: "13px",
                     },
                     fontWeight: 400,

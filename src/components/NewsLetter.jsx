@@ -2,9 +2,12 @@ import {
   Button,
   CardContent,
   Container,
+  Input,
   TextField,
   Typography,
 } from "@mui/material";
+
+import { Box, AppBar, Toolbar } from "@mui/material";
 import { Stack } from "@mui/system";
 import React from "react";
 
@@ -18,10 +21,10 @@ const NewsLetter = () => {
         backgroundSize: "cover",
         height: "450px",
         width: "100%",
-        padding: "4rem",
+        padding: "4rem 0",
       }}
     >
-      <Container>
+      <Container sx={{ width: "100%" }}>
         <Stack sx={{ color: "white", textAlign: "center" }}>
           <Stack
             sx={{
@@ -70,9 +73,10 @@ const NewsLetter = () => {
             </CardContent>
           </Stack>
           {/* <Stack sx={{ width: "100%", margin: "0 auto" }}> */}
-          <Stack
+          {/* <Stack
             direction="row"
             sx={{
+              backgroundColor: "white",
               width: "100%",
               height: "auto",
               borderRadius: "5px",
@@ -122,8 +126,139 @@ const NewsLetter = () => {
             >
               Attending
             </Button>
-          </Stack>
+          </Stack> */}
           {/* </Stack> */}
+          {/* <Box
+            sx={{
+              flexGrow: 1,
+              width: "100%",
+              minHeight: "35px",
+            }}
+          > */}
+          {/* <AppBar
+            position="static"
+            sx={{
+              width: "100%",
+              margin: "0px auto",
+            }}
+          > */}
+          {/* <Toolbar
+            sx={{
+              backgroundColor: "#ffffff",
+              color: "#000000",
+              width: "60%",
+              height: "30px",
+              display: "flex",
+              alignItems: "center",
+              padding: "1rem",
+              // flexDirection: "column",
+              textAlign: "center",
+            }}
+          >
+            <Input
+              id="outlined-basic"
+              variant="outlined"
+              placeholder="Enter your email"
+              sx={{
+                width: {
+                  xs: "80%",
+                  sm: "80%",
+                  md: "80%",
+                  lg: "80%",
+                },
+                backgroundColor: "white",
+                borderRadius: "5px",
+                height: "100%",
+                "& .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input": {
+                  // padding: "8px",
+                },
+              }}
+            />
+            <Button
+              sx={{
+                width: "20%",
+                backgroundImage:
+                  "linear-gradient(to bottom right, #EE0034, #8000FF)",
+                height: "100%",
+                marginLeft: "-1rem",
+                color: "#ffffff",
+              }}
+              color="inherit"
+            >
+              Attending
+            </Button>
+          </Toolbar> */}
+          {/* </AppBar> */}
+          {/* </Box> */}
+        </Stack>
+        <Stack
+          direction="row"
+          sx={{
+            backgroundColor: "#ffffff",
+            color: "#000000",
+            width: {
+              xs: "100%",
+              sm: "90%",
+              md: "70%",
+              lg: "65%",
+            },
+            height: "40px",
+            alignItems: "center",
+            borderRadius: "5px",
+            margin: "0px auto",
+          }}
+        >
+          <Input
+            id="outlined-basic"
+            variant="outlined"
+            placeholder="Enter your email"
+            sx={{
+              width: {
+                xs: "70%",
+                sm: "75%",
+                md: "75%",
+                lg: "75%",
+              },
+              backgroundColor: "white",
+              borderRadius: "5px",
+              height: "100%",
+              "& .css-1x51dt5-MuiInputBase-input-MuiInput-input:focus": {
+                borderBottom: "none",
+                outline: "none",
+              },
+              padding: "7px",
+              border: "none",
+              outline: "none",
+              "&:focus": {
+                borderBottom: "none",
+                outline: "none",
+              },
+            }}
+          />
+          <Button
+            sx={{
+              width: {
+                xs: "30%",
+                sm: "25%",
+                md: "25%",
+                lg: "25%",
+              },
+              backgroundImage:
+                "linear-gradient(to bottom right, #EE0034, #8000FF)",
+              height: "100%",
+              // marginLeft: "-1rem",
+              color: "#ffffff",
+              fontSize: {
+                xs: "12px",
+                sm: "14px",
+                md: "16px",
+              },
+              fontWeight: 600,
+            }}
+            color="inherit"
+          >
+            Attending
+          </Button>
         </Stack>
       </Container>
     </Stack>
